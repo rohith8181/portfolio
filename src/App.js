@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header'
+import About from './components/About/About'
+import vedio from './assets/Vedio.mp4'
+import Intropage from './components/Intropage/Intropage'
+import Skills from './components/Skills/Skills';
+import AnimatedCursor from 'react-animated-cursor';
+import Contact from './components/Contact/Contact';
+import Project1 from './components/Projectcarousel/Project';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='top' className='app'>
+      <AnimatedCursor />
+      <video src={vedio} autoPlay muted loop className='MainVedio' />
+      <div className='VedioOverlay'></div>
+      <div className='VedioPage'>
+        <Header />
+        <About />
+      </div>
+      <Intropage />
+      <Skills />
+      <Project1 />
+      <Contact />
     </div>
   );
 }

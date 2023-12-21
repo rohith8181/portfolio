@@ -1,0 +1,158 @@
+.App {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23283e;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-btn-grp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project-btn {
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    background-color: #23283e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project-btn .live {
+    background-color: none;
+    border: 2px solid #fff;
+}
+
+.carousel-side-des {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.carousel-item-text {
+    font-size: 1.15rem;
+    margin: 40px 0 40px 0;
+    padding: 0 20px 0 20px;
+    white-space: normal;
+    color: #617d98;
+}
+
+.carousel-img {
+    width: 40%;
+    height: 325px;
+    padding: 0 20px 0 20px;
+}
+
+/* final stage */
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.indicator-buttons {
+    border: none;
+    cursor: pointer;
+}
+
+.indicators>button {
+    margin: 5px;
+    background: none;
+}
+
+.indicator-symbol {
+    color: #26343f;
+}
+
+.indicator-symbol-active {
+    color: #ffffff;
+}
+
+
+@media (max-width: 1168px) {
+    .carousel-item {
+        flex-direction: column;
+    }
+
+    .carousel-img {
+        height: auto;
+    }
+
+    .carousel-item-text {
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media (max-width: 968px) {
+    .carousel-img {
+        width: 50%;
+    }
+
+    .carousel-item-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-img {
+        width: 90%;
+    }
+
+    .carousel-item-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel-item {
+        padding: 10px 0px;
+    }
+
+    .carousel-item-text {
+        padding: 5px 3px;
+    }
+    .carousel-img {
+        width: 100%;
+    }
+}
