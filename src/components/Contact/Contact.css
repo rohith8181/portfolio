@@ -12,7 +12,6 @@
 .email-fix {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
 }
 
 .contact-form h2 {
@@ -103,6 +102,14 @@ textarea {
 
 }
 
+.end-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: auto;
+}
+
 @media(max-width:736px) {
     .contact-form .main {
         flex-direction: column-reverse;
@@ -113,9 +120,11 @@ textarea {
         margin-bottom: 10px;
 
     }
+
     .email-fix {
         font-size: 20px;
     }
+
     .form-img img {
         width: 70%;
         margin: auto;
@@ -134,5 +143,11 @@ textarea {
     .content {
         order: 1;
         border-radius: 0;
+    }
+}
+@media(max-width:400px){
+    .email-fix {
+        font-size: 15px;
+
     }
 }

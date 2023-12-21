@@ -4,7 +4,7 @@ import { about } from '../../Portfolio_details'
 import './About.css'
 
 const About = () => {
-    const { name, role, description, resume, social } = about
+    const { name, description, resume, social } = about
     const [text] = useTypewriter({
         words: ['Web Developer', 'React.js Developer', 'Programmer'],
         loop: {},
@@ -12,7 +12,7 @@ const About = () => {
         delaySpeed: 10,
     });
     return (
-        <div className='about center'>
+        <div id="top" className='about center'>
             {name && (
                 <div className="heading hero-text">
                     <h1>
@@ -23,7 +23,7 @@ const About = () => {
                 </div>
             )}
 
-            <h2 className='about__role'>A {text}</h2>
+            <h2 className='about__role'>A {text}<Cursor /></h2>
             <p className='about__desc'>{description && description}</p>
 
             <div className='about__contact center'>
