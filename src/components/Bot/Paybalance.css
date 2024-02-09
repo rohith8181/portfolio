@@ -1,0 +1,48 @@
+.wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.submit_btn {
+    background-color: rgb(144, 0, 0);
+    color: white;
+}
+
+.submit_btn:hover {
+    background-color: rgb(96, 1, 1);
+}
+
+.form-signin-heading {
+    margin-bottom: 30px;
+    color: black;
+}
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

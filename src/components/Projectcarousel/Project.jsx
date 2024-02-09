@@ -8,26 +8,7 @@ import './Project.css'
 
 function Project() {
     const [activeIndex, setActiveIndex] = useState(0);
-    // const projects = [
-    //     {
-    //         title: "Baseball",
-    //         description:
-    //             "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher.",
-    //         icon: require("../../assets/Profilepic.jpeg"),
-    //     },
-    //     {
-    //         title: "Walking",
-    //         description:
-    //             "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher.",
-    //         icon: require("../../assets/Profilepic.jpeg"),
-    //     },
-    //     {
-    //         title: "Weights",
-    //         description:
-    //             "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher.",
-    //         icon: require("../../assets/Profilepic.jpeg"),
-    //     },
-    // ];
+
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
             newIndex = 0;
