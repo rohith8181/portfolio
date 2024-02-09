@@ -9,7 +9,7 @@ import Skills from './components/Skills/Skills';
 import AnimatedCursor from 'react-animated-cursor';
 import Contact from './components/Contact/Contact';
 import Project1 from './components/Projectcarousel/Project';
-import Paybalance from './components/Bot/Paybalance';
+import Paybalance from './components/Bot_Tel/Paybalance';
 
 
 function App() {
